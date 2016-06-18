@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<!--
+    Copyright (c) 2012-2014 Adobe Systems Incorporated. All rights reserved.
+
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <title>Metric Master Race</title>
+    </head>
+    <body>
+        <div class="mainframe"> 
+            <h1 style="font-size:3.3em;padding-top:5%;">Tip Calculator</h1>
+            <br><br>
+            
+            <form name="converter" id="convert">
+
+                <input type="number" name="dollar" onkeyup="dollarConverter()" class="val" placeholder="PRICE"/>
+                    <br><br>
+                
+                <input type="radio" name="amount" value="10" checked="checked" id="rb1" onclick="dollarConverter()"> 10% (Standard)<br><br>
+                <input type="radio" name="amount" value="15" id="rb2" onclick="dollarConverter()"> 15% (Fancy)<br><br>
+                <input type="radio" name="amount" value="20" id="rb3" onclick="dollarConverter()"> 20% (Very Fancy)<br>
+                
+                <br><br>
+                <input type="number" name="output" class="val" placeholder="TIP" readonly>
+
+            </form>
+            
+            <br><br><br><br>
+            <div class="bt-wrapper">
+                <a href="index.html" class="button" id="bt-3">&lt; Main menu</a>
+                </div><br><br>
+            
+        </div>
+
+        
+        <script language="JavaScript">
+<!--
+function dollarConverter(){
+    var x = document.getElementById("rb1").checked;
+    var y = document.getElementById("rb2").checked;
+    var z = document.getElementById("rb3").checked;
+    if(x === true){
+        document.converter.output.value = document.converter.dollar.value / 10;
+    }
+    if(y === true){
+       document.converter.output.value = (document.converter.dollar.value / 10) * 1.5;
+    }
+    if(z === true){
+        document.converter.output.value = (document.converter.dollar.value / 10) * 2;
+    }
+//document.converter.sek.value = document.converter.dollar.value / 10;
+
+}
+
+//-->
+</script>
+        
+    </body>
+</html>
