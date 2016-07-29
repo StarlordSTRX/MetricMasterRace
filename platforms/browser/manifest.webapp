@@ -1,7 +1,7 @@
 {
-  "name": "My App",
-  "description": "Description of your app",
-  "launch_path": "/index.html",
+  "name": "Metric Master Race",
+  "description": "Convert to more readable units",
+  "launch_path": "/www/index.html",
   "icons": {
     "128": "/img/logo.png"
   },
